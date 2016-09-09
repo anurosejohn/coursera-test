@@ -1,0 +1,39 @@
+*{
+	  box-sizing: border-box;
+  	  font-family: Helvetica;
+}
+
+h1{text-align: center; font-size: 175%; }
+section{margin-left: .83em; margin-right: .83em; margin-bottom: .83em;}
+article{padding: 0.10em;}
+section section{border: 1px solid black; background-color: grey; margin-bottom: 1.66em;}
+h2{border: 1px solid black; margin: 0px; padding-left: .83em; padding-right: .83em; border-top: 0px; border-right: 0px; float: right; font-size: 125%;}
+div{border-top: 0px; margin-bottom: .83em; margin-left: .83em; margin-right: .83em; padding-top: .30em; clear:right; }
+article>section#Breakfast>h2{background-color: #FFB6C1; color: #0000ff;}
+article>section#Lunch>h2{background-color: #FF6347; color: #ffffff;}
+article>section#Dinner>h2{background-color: #00FF00;}
+
+@media (min-width: 992px)
+{		 
+ 	.col-lg-4 
+ 	{
+    	width: 33.33%;
+    	float:left;
+  	}  
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{
+	.col-md-6 
+	{
+   		width: 50%;
+   		float:left;
+   		position: relative;
+	}
+
+	article>section#Dinner
+	{
+		clear:both;
+	}
+
+}
